@@ -1,0 +1,15 @@
+#! /usr/bin/bash
+
+user=$(whoami)
+dir="/home/$user/opt"
+
+if [ "$#" -gt 0 ]; then
+        if [ ! -d "$dir" ]; then
+            mkdir -p "$dir"
+        fi
+        cd $dir
+            git clone $1
+            echo "[+] Cloned in $dir"
+else
+        echo "[*] Usage : download [git repo link]"
+fi
