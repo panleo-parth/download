@@ -24,4 +24,4 @@ and you are good to go...
 use it anywhere it will clone any github repo to your opt(local) directory 
 
 ## Usage
-`download https://github.com/panleo-parth/download.git`
+`download https://github.com/v445u/download.git`
